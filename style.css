@@ -1,0 +1,100 @@
+body{
+ /*    margin: 0;
+  padding: 0;
+  height: 100vh;*/
+  background-image: url('images/placaCircuito.webP'); /* Cambia esto por la ruta real */
+  background-size: cover important!; /* Ajusta la imagen para que cubra toda la pantalla */
+  background-position: center important!; /* Centra la imagen */
+  background-repeat: no-repeat; /* Evita que la imagen se repita */
+  background-attachment: fixed important!; 
+  color: #fff;
+  font-family: 'Segoe UI', sans-serif;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  height: auto;
+}
+footer{
+  text-align: center;
+  color: #fff;
+  text-align: center;
+  
+}
+h1{
+  text-align: center;
+  padding-top: 10%;
+  padding-left: 10%;
+  padding-right: 10%;
+}
+
+.botonesCentral{
+  border-radius: 20%;
+  border-color:#00DBEF;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  background-color: transparent;
+  color: #00DBEF;
+  align-items: center;
+  margin-top: 10%;
+  margin-left: 10px;
+  margin-right: 10px;
+ 
+}
+
+
+/* Quitar fondo de contenedor bootstrap */
+main, section {
+  background-color: rgba(0, 0, 0, 0.6); /* semitransparente para ver el fondo */
+  padding: 2rem;
+  border-radius: 10px;
+  margin-bottom: 2rem;
+}
+
+/* Formularios */
+form input,
+form textarea {
+  background-color: rgba(255, 255, 255, 0.9);
+  color: #000;
+  border: none;
+  border-radius: 5px;
+}
+
+form input:focus,
+form textarea:focus {
+  outline: none;
+  box-shadow: 0 0 5px #4caf50;
+}
+
+form button {
+  background-color: #4caf50;
+  border: none;
+  padding: 0.5rem 1rem;
+  color: white;
+  border-radius: 5px;
+}
+
+form button:hover {
+  background-color: #43a047;
+}
+
+/* Títulos */
+h1, h2 {
+  font-weight: bold;
+}
+
+
+/* Navbar transparente */
+.navbar {
+  background-color: rgba(0, 123, 255, 0.8) !important;
+}
+
+/* Botón de navegación activa */
+.nav-link.active {
+  font-weight: bold;
+  text-decoration: underline;
+}
+
+/* Responsive hack para evitar scroll horizontal */
+html, body {
+  overflow-x: hidden;
+}
+
