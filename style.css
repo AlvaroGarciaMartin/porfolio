@@ -2,7 +2,7 @@ body{
  /*    margin: 0;
   padding: 0;
   height: 100vh;*/
-  background-image: url('images/placaCircuito.webP'); /* Cambia esto por la ruta real */
+  background-image: url('images/fondo.jpg'); /* Cambia esto por la ruta real */
   background-size: cover important!; /* Ajusta la imagen para que cubra toda la pantalla */
   background-position: center important!; /* Centra la imagen */
   background-repeat: no-repeat; /* Evita que la imagen se repita */
@@ -97,4 +97,79 @@ h1, h2 {
 html, body {
   overflow-x: hidden;
 }
+
+/* estilos section */
+.section {
+  overflow: hidden;
+  max-height: 90px; /* Altura colapsada, ajusta según tu contenido */
+  transition: max-height 1s ease;
+  margin-bottom: 10px;
+  background-color: rgba(0, 0, 0, 0.6);
+  cursor: pointer;
+  border-radius: 10px;
+  padding: 10px;
+}
+
+
+.section:hover {
+  transform: scale(1.02); /* Efecto de zoom al pasar el mouse */
+}
+
+.section.expanded {
+  height: auto; /* Se muestra todo si está "expandidado" */
+}
+
+.section h2 {
+  margin: 0;
+  font-size: 1.2em;
+}
+
+.section .content {
+  margin-top: 10px;
+  display: none;
+  opacity: 0;
+  transition: opacity 0.5s ease;
+}
+
+.section:hover .content,
+.section.expanded .content {
+  opacity: 1;
+}
+
+.section.expanded .content {
+  display: block;
+}
+
+.section.expanded {
+ max-height: 500px; /* Altura expandida, ajusta según el contenido real */
+}
+.section:hover .content {
+  opacity: 1;
+}
+
+/* Hover (solo si NO está expandido) */
+.section:not(.expanded):hover {
+  max-height: 1000px;
+}
+
+.section:not(.expanded):hover .content {
+  opacity: 1;
+}
+
+/* Estado expandido permanente por clic */
+
+#sobreMiTitulo {
+  text-align: center;
+  margin-bottom: 20px;
+  font-size: 20px;
+}
+
+#sobreMiCuerpo{
+  background-image: url('images/desarollo.jpg'); /* Cambia esto por la ruta real */
+  background-size: cover !important; /* Ajusta la imagen para que cubra toda la pantalla */
+  background-position: center !important; /* Centra la imagen */
+}
+
+
+
 
