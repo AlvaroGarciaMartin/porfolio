@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sección desplegable</title>
+  <style>
+    .section {
+      border: 1px solid #ccc;
+      margin: 10px;
+      border-radius: 8px;
+    }
+
+    .section-header {
+      padding: 10px;
+      background: #eee;
+      cursor: pointer;
+    }
+
+    .section-content {
+      max-height: 0;
+      overflow: hidden;
+      transition: max-height 0.4s ease;
+      padding: 0 10px;
+    }
+
+    .section.open .section-content {
+      max-height: 500px; /* ajusta según necesidad */
+      padding: 10px;
+    }
+  </style>
+</head>
+<body>
+
+<div class="section" id="mySection">
+  <div class="section-header">Haz click para desplegar</div>
+  <div class="section-content">
+    <p>Este es el contenido desplegable. Puedes poner aquí lo que quieras: texto, imágenes, etc.</p>
+    <p>Cuando hagas click de nuevo en el encabezado, se cerrará.</p>
+  </div>
+</div>
+
+<script>
+  const section = document.getElementById('mySection');
+  const header = section.querySelector('.section-header');
+
+  header.addEventListener('click', () => {
+    section.classList.toggle('open');
+  });
+</script>
+
+</body>
+</html>
