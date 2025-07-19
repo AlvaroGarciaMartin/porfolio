@@ -158,9 +158,9 @@ html, body {
 
 /* Estado expandido permanente por clic */
 
-#sobreMiTitulo {
+#sobreMiTitulo, #proyectosTitulo, #contactoTitulo {
   text-align: center;
-  margin-bottom: 20px;
+  margin-bottom: 30px;
   font-size: 20px;
 }
 
@@ -169,6 +169,7 @@ html, body {
   background-size: cover !important; /* Ajusta la imagen para que cubra toda la pantalla */
   background-position: center !important; /* Centra la imagen */
 }
+
 
 
 
